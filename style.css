@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and borders in element's total width/height */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #dccda8; /* Soft background color */
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Maximum width for larger screens */
+}
+
+h2 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Darker text for readability */
+    margin-bottom: 1rem;
+}
+
+form {
+    margin: 0; /* Reset margin */
+}
+
+form select,
+button,
+input {
+    height: 2.5rem; /* Increased height for better accessibility */
+    border: none;
+    outline: none;
+    border-radius: 0.75rem; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth transition for focus states */
+}
+
+form input {
+    border: 1px solid lightgray; /* Light border for inputs */
+    font-size: 1.2rem; /* Slightly larger font */
+    padding-left: 1rem; /* Padding inside input */
+}
+
+form select {
+    width: 100%; /* Full width for select dropdown */
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    align-items: center;
+    margin-top: 1.5rem; /* Margin for spacing */
+}
+
+.dropdown i {
+    font-size: 2rem; /* Icon size */
+    margin-top: 1rem; /* Spacing above icon */
+}
+
+.amount {
+    display: flex; /* Flex layout for input and label */
+    align-items: center; /* Center align vertically */
+}
+
+#amount-text {
+    margin-right: 1rem; /* Space between text and input */
+    font-size: 1rem; /* Font size for label */
+}
+
+.select-container img {
+    max-width: 2rem; /* Maximum width for flag images */
+}
+
+.select-container {
+    display: flex;
+    justify-content: center; /* Center the flag and select */
+    align-items: center;
+    border: 1px solid lightgray; /* Border around the select container */
+    border-radius: 0.5rem; /* Rounded corners */
+    padding: 0.2rem; /* Padding for better touch target */
+}
+
+.msg {
+    text-align: center; /* Center the message */
+    color: #555; /* Slightly darker for better readability */
+    margin: 1rem 0; /* Margin for spacing */
+}
+
+form button {
+    padding: 0.8rem;
+    height: 3rem; /* Button height */
+    background-color: #af4d98; /* Primary button color */
+    color: white; /* Text color */
+    font-size: 1.2rem; /* Font size */
+    cursor: pointer; /* Pointer cursor for button */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    margin-left: auto; /* Push left */
+    margin-right: auto; /* Push right */
+    display: block; /* Make it block-level element */
+}
+
+form button:hover {
+    background-color: #933b75; /* Darker shade on hover */
+}
+
+form button:disabled {
+    background-color: #ccc; /* Color for disabled state */
+    cursor: not-allowed; /* Not-allowed cursor */
+}
